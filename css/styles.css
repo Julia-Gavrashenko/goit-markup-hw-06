@@ -267,6 +267,10 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-left: 41px;
+  padding-right: 39px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: var(--light-fill-color);
   border: none;
   border-radius: 4px;
@@ -289,6 +293,11 @@ img {
   background-color: var(--light-fill-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* modal-window-form */
+
+
+
 
 /* section feature styles */
 .section {
