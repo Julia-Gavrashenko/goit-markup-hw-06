@@ -348,27 +348,9 @@ padding-right: 16px;
     letter-spacing: 0.01em;
 }
 
-.modal-form-btn{
-display: flex;
-margin-right: auto;
-margin-left: auto;
-cursor: pointer;
-width: 200px;
-min-height: 50px;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 52px;
-padding-right: 52px;
-border: none;
-background-color: var(--accent-background-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  line-height: calc(30 /16);
-color: var(--light-text-color);
+
+
 
 /* section feature styles */
 
