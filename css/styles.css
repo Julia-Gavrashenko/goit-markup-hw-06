@@ -411,23 +411,13 @@ img {
 
 
 .form-agreement-link{
-  cursor: pointer;
   color: var(--accent-text-color);
   text-decoration: underline;
 }
 
-/* .icon-checked{
-  fill: var(--icon-white-color);
-}  */
-
-/* .form-agreement-icons{
-  margin-right: 7px;
-} */
 
 
-
-
-.icon-unchecked {
+ .icon-unchecked {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
@@ -437,13 +427,13 @@ img {
 
 
  .icon-checked{
-  opacity: 0;
+  opacity: 0; 
   background-color: var(--accent-background-color);
   transition: opacity var(--anim-hover);
 }
 
 
-  
+/*   
 .form-agreement-checkbox:checked + .form-agreement-icons .icon-checked{
   opacity: 1; 
   fill: #2196f3;
@@ -452,8 +442,9 @@ img {
 
 .form-agreement-checkbox:checked+.form-agreement-icons .icon-unchecked {
   opacity: 0;
+  
 } 
-
+  */
 
 
 .modal-form-btn {
