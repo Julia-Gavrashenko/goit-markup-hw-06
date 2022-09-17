@@ -20,7 +20,7 @@
   --img-background-color: #c4c4c4;
   --icon-light-color: #afb1b8;
   --icon-grey-color: #757575;
-  --icon-white-color:#FFFFFF;
+  --icon-white-color: #ffffff;
 
   /* animation */
   --anim-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -306,6 +306,7 @@ img {
 }
 
 .modal-name {
+  display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -316,40 +317,47 @@ img {
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form-label{
-  position: relative;
-}
-
-.user-icon{
-  position: absolute;
- 
-}
-
 .form-input {
+  width: 450px;
+  height: 40px;
   background: var(--light-fill-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
 .form-input:hover,
-.form-input:focus
-{
+.form-input:focus {
   border-color: var(--accent-background-color);
+  outline: var(--accent-background-color);
   transition: border-color var(--anim-hover);
 }
 
-.form-field label {
+.form-label {
+ 
+  display: block;
   margin-bottom: 4px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
   color: var(--main-text-color);
+}
+
+.user-icon{
+  position: absolute;
+  top: 11px;
+  left: 12px;
+transform: translate();
 }
 
 .form-field textarea {
   resize: none;
+  min-height: 120px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 16px;
@@ -830,7 +838,6 @@ img {
 }
 
 .footer-form-field {
- 
   width: 360px;
   min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -840,8 +847,6 @@ img {
 }
 
 .footer-form-mail {
- 
-  
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -877,7 +882,7 @@ img {
   border-radius: 4px;
 }
 
-.icon-send{
- fill: var(--icon-white-color);
-margin-left: 10px;
+.icon-send {
+  fill: var(--icon-white-color);
+  margin-left: 10px;
 }
