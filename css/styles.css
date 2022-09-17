@@ -378,6 +378,21 @@ img {
   letter-spacing: 0.01em;
 }
 
+.form-agreement-label{
+
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+
+.form-agreement-label a {
+  color: var(--accent-text-color);
+  text-decoration: underline;
+
+}
+
 .modal-form-btn {
   display: block;
   margin: 0;
@@ -844,6 +859,7 @@ img {
 }
 
 .footer-form-field {
+  position: relative;
   width: 360px;
   min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -852,21 +868,24 @@ img {
   background-color: var(--dark-fill-color);
 }
 
-.footer-form-mail {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
+.footer-form-item{
+  position: relative;
+}
 
+.footer-form-email {
+  position: absolute;
+  top: 15px;
+  left: 16px; 
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
