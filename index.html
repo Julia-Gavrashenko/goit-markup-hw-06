@@ -145,22 +145,23 @@
 
               <div class="form-agreement">
                 <input
-                  class="form-agreement-checkbox"
+                  class="form-agreement-checkbox visually-hidden"
                   type="checkbox"
                   name="policy"
                   id="policy"
                 />
-                <svg class="form-agreement-icons" width="16" height="15">
-                  <use
-                    class="icon-checked"
-                    href="./image/icons.svg#checked-icon"
-                  ></use>
-                  <use class="icon-unchecked" href="./image/icons.svg#unchecked-icon"></use>
-                </svg>
-                <span class="form-agreement-label" for="policy"
+
+                <div class="agreement-icons">
+                  <span class="agreement-unchecked"></span>
+                  <svg class="agreement-checked" width="16" height="15">
+                    <use href="./image/icons.svg#icon-checked3"></use>
+                  </svg>
+                </div>
+
+                <label class="form-agreement-label" for="policy"
                   >Погоджуюся з розсилкою та приймаю
-                  <a class="form-agreement-link" ref=""> Умови договору </a>
-                </span>
+                  <a class="form-agreement-link" href=""> Умови договору </a>
+                </label>
               </div>
 
               <button class="modal-form-btn" type="submit">Відправити</button>

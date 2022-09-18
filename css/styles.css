@@ -333,7 +333,6 @@ img {
   transition: fill var(--anim-hover);
 }
 
-
 .form-input:focus {
   border-color: var(--accent-background-color);
   outline: var(--accent-background-color);
@@ -356,12 +355,10 @@ img {
   transform: translateY(100%);
 }
 
-
-.form-input:focus + .user-icon{
+.form-input:focus + .user-icon {
   fill: var(--accent-background-color);
   transition: border-color var(--anim-hover);
 }
-
 
 .form-field {
   position: relative;
@@ -393,7 +390,6 @@ img {
   letter-spacing: 0.01em;
 }
 
-
 .form-agreement {
   display: flex;
   align-items: center;
@@ -402,50 +398,53 @@ img {
   margin-bottom: 30px;
 }
 
-.form-agreement-label{
+.form-agreement-label {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  user-select: none;
 }
 
-
-.form-agreement-link{
+.form-agreement-link {
   color: var(--accent-text-color);
   text-decoration: underline;
 }
 
-
-
- .icon-unchecked {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    opacity: 1;
-      transition: opacity var(--anim-hover);
+.agreement-icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
- .icon-checked{
-  opacity: 0; 
-  background-color: var(--accent-background-color);
+.agreement-unchecked {
+  opacity: 1;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  background-color: #ffffff;
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 2px;
   transition: opacity var(--anim-hover);
 }
 
-
-/*   
-.form-agreement-checkbox:checked + .form-agreement-icons .icon-checked{
-  opacity: 1; 
-  fill: #2196f3;
-  
+.agreement-checked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #2196f3;
+  border-radius: 2px;
+  transition: opacity var(--anim-hover);
 }
 
-.form-agreement-checkbox:checked+.form-agreement-icons .icon-unchecked {
-  opacity: 0;
-  
-} 
-  */
+.form-agreement-checkbox:checked + .agreement-icons .agreement-checked {
+  opacity: 1;
+}
 
+.form-agreement-checkbox:checked + .agreement-icons .agreement-unchecked {
+  opacity: 0;
+}
 
 .modal-form-btn {
   display: block;
@@ -922,14 +921,14 @@ img {
   background-color: var(--dark-fill-color);
 }
 
-.footer-form-item{
+.footer-form-item {
   position: relative;
 }
 
 .footer-form-email {
   position: absolute;
   top: 15px;
-  left: 16px; 
+  left: 16px;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
@@ -938,8 +937,8 @@ img {
 
 .footer-form-btn {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
